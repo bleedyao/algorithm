@@ -5,6 +5,9 @@
  * 例如：如果输入长度为 7 的数组 {2，3，1，0，2，5，3} 那么对应的输出是重复的数字 2 或者 3
  */
 public class Test03 {
+    /**
+     * 时间复杂度 O(n) 空间复杂度 O(1)
+     */
     public static int checkMulitNumber(int[] nums) {
         int currentIndex = 0;
         int swapIndex = 0;
@@ -23,7 +26,7 @@ public class Test03 {
                 if (swapIndex == nums[swapIndex]) {
                     return swapIndex;
                 } else {
-                    // 交换
+                    // 数据交换位置
                     swap(nums, currentIndex, swapIndex);
                 }
             }
