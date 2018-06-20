@@ -25,7 +25,6 @@ public class Demo01 {
             return -1;
         }
         int[] kArr = Arrays.copyOf(arr, k);
-        System.out.println(kArr.length);
         bubbleSort(kArr);
         for (int i = k; i < arr.length; i++) {
             if (arr[i] > kArr[k - 1]) {
@@ -85,7 +84,7 @@ public class Demo01 {
 
 
     // 验证
-    static int arrayLength = 50000;
+    static int arrayLength = 40000;
     static int k = arrayLength / 2;
 
     public static void main(String[] args) {
