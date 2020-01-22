@@ -1,4 +1,5 @@
 # 注释
-.idea/*
-out/*
+.idea/
+out/
 *.iml
+node_module/
