@@ -21,4 +21,10 @@ private void permute(char[] str,int low,int high)
 如果 str 是 "abc"，那么输出的字符串则是 abc，acb，bac，bca，cab 和 cba。
 第二个方法使用递归。
 
+# 题目列表
 
+* 01_reverse-linked-list
+* 02_swap-nodes-in-pairs
+* 03_linked-list-cycle
+* 04_linked-list-cycle-ii
+* 05_reverse-nodes-in-k-group
