@@ -1,5 +1,8 @@
 package kotlin_language
 
+import java.util.*
+import javax.swing.plaf.TableHeaderUI
+
 fun bubbleSort(arr: IntArray): IntArray {
     if (arr.size <= 1) return arr
     for (i in arr.indices) {
@@ -47,7 +50,30 @@ fun selectSort(arr: IntArray): IntArray {
 }
 
 fun main() {
-    println(bubbleSort(intArrayOf(5, 4, 3, 2, 1)).contentToString())
-    println(insertSort(intArrayOf(5, 4, 3, 2, 1)).contentToString())
-    println(selectSort(intArrayOf(5, 4, 3, 2, 1)).contentToString())
+    val testArr = IntArray(10_000_000)
+    val r = Random()
+    for (i in testArr.indices) {
+        testArr[i] = r.nextInt()
+    }
+    Thread {
+        val start = System.currentTimeMillis()
+        bubbleSort(testArr.clone())
+        println("bubble sort during time: ${System.currentTimeMillis() - start}")
+    }.start()
+
+    Thread {
+        val start = System.currentTimeMillis()
+        insertSort(testArr.clone())
+        println("insert sort during time: ${System.currentTimeMillis() - start}")
+    }.start()
+
+    Thread {
+        val start = System.currentTimeMillis()
+        selectSort(testArr.clone())
+        println("select sort during time: ${System.currentTimeMillis() - start}")
+    }.start()
+
+    println(bubbleSort(intArrayOf(6, 5, 4, 3, 2, 1)).contentToString())
+    println(insertSort(intArrayOf(6, 5, 4, 3, 2, 1)).contentToString())
+    println(selectSort(intArrayOf(6, 5, 4, 3, 2, 1)).contentToString())
 }

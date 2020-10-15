@@ -1,3 +1,4 @@
+import java.util.Arrays;
 import java.util.Random;
 
 public class SlowSort {
@@ -76,6 +77,5 @@ public class SlowSort {
             long end = System.currentTimeMillis();
             System.out.println("select during time: " + (end - start));
         }).start();
-
     }
 }
