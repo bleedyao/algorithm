@@ -21,4 +21,83 @@ private void permute(char[] str,int low,int high)
 如果 str 是 "abc"，那么输出的字符串则是 abc，acb，bac，bca，cab 和 cba。
 第二个方法使用递归。
 
+# 题目列表
 
+* 01_reverse-linked-list
+* 02_swap-nodes-in-pairs
+* 03_linked-list-cycle
+* 04_linked-list-cycle-ii
+* 05_reverse-nodes-in-k-group
+
+# 算法训练方针
+## 如何系统的学习算法和数据结构
+* 职业顶尖级别 - 对于算法数据结构的理解
+* 一线互联网公司面试
+* LeetCode 300+ 练习
+
+## 训练方法
+* Chunk it up 切碎知识点
+    * 庖丁解牛
+    * 脉络连接
+* Deleberate Practicing 刻意练习
+* feedback 反馈
+
+### 数据结构
+* 一维
+    * 基础：数组 array，链表 linked list
+    * 高级：栈 stack，队列 queue，双端队列 deque，集合 set，映射 map
+* 二维
+    * 基础：树 tree，图 graph
+    * 高级：二叉搜索树 binary search tree（red-black tree, AVL）,堆 heap,并查集 disjoint set,字典树 Trie
+* 特殊
+    * 位运算 bitwise，布隆过滤器 bloomFilter
+    * LRU Cache
+
+### 算法
+* If-else, switch -> branch
+* for, while loop -> Iteration
+* 递归 Recursion (Divide & Conquer, Backtrace)
+* 搜索 Search：深度优先搜索 Depth first search, 广度优先搜索 Breadth first search, A*
+* 动态规划 Dynamic Programming
+* 二分查找 Binary Search
+* 贪心 Greedy
+* 数学 Math，几何 Geametry
+注意：在头脑中回忆上面每种算法的思想和代码模板
+
+## 切题四件套
+* Clarification 理解清晰
+* Possible solutions 想所有可能的解法，比较时间和空间负责度
+* Coding 
+* Test cases
+
+## 刷题方法
+### 第一遍刷题
+* 读题 + 思考
+* 直接看解法，比较解法的优劣
+* 背诵和默写解法
+
+### 第二遍刷题
+* 马上自己写 -> 提交 Leetcode
+* 多种解法比较，体会 -> 优化
+
+### 第三遍刷题
+* 过了一天之后，复习相同的题目
+
+### 第四遍刷题
+* 过了一周之后，复习相同的题目
+
+### 第五遍刷题
+* 面试之前，复习相同的题目
+
+# 时间和空间复杂度
+* 经常面试的算法
+* 二分法
+* 二叉树
+* 二维矩阵的二分查找
+* 归并排序
+* 二叉树的前序，中序，后序遍历
+* 图的遍历：时间复杂度是多少？
+* 搜索算法：DFS, BFS时间复杂度是多少？
+* 二分查找：时间复杂度是多少？
+
+# 数组，链表，跳表
