@@ -6,8 +6,8 @@ class _283_Move_Zeroes {
     public static void main(String[] args) {
         int[] arr = new int[] { 0, 1, 0, 3, 12, 0 };
         // move_Zeroes(arr);
-        // move_Zeroes1(arr);
-        move_Zeroes2(arr);
+        move_Zeroes1(arr);
+        // move_Zeroes2(arr);
         System.out.println(Arrays.toString(arr));
     }
 
