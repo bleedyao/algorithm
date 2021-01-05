@@ -2,8 +2,6 @@ package round04;
 
 import java.util.Arrays;
 
-import common.SwapInt;
-
 class _283_Move_Zeroes {
     public static void main(String[] args) {
         int[] arr = new int[] { 0, 1, 10, 3, 12, 0, 2, 0, 4, 6 };
