@@ -6,14 +6,15 @@ class _283_Move_Zeroes {
     public static void main(String[] args) {
         int[] arr = new int[] { 0, 1, 0, 3, 12, 0 };
         // move_Zeroes(arr);
-        move_Zeroes1(arr);
-        // move_Zeroes2(arr);
+//        move_Zeroes1(arr);
+         move_Zeroes2(arr);
         System.out.println(Arrays.toString(arr));
     }
 
     private static void move_Zeroes2(int[] arr) {
         if (arr == null || arr.length == 0)
             return;
+        // 这个 index 代表 0 的位置
         int index = 0;
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] != 0) {

@@ -10,16 +10,15 @@ class _283_Move_Zeroes {
     }
 
     private static void move_Zeroes(int[] arr) {
-        if (arr == null || arr.length < 1)
+        if (arr == null || arr.length < 1) {
             return;
-        // zeroIndex 表示 0 的个数
-        int zeroIndex = 0;
+        }
+        int index = 0;
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] == 0) {
-                zeroIndex++;
-            } else if (zeroIndex != 0) {
-                arr[i - zeroIndex] = arr[i];
-                arr[i] = 0;
+            if (arr[i] != 0) {
+                int tmp = arr[index];
+                arr[index++] = arr[i];
+                arr[i] = tmp;
             }
         }
     }
