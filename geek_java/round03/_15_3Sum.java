@@ -12,8 +12,7 @@ public class _15_3Sum {
 
     private static List<List<Integer>> threeSum1(int[] nums) {
         List<List<Integer>> res = new ArrayList<>();
-        if (nums == null || nums.length < 3)
-            return res;
+        if (nums == null || nums.length < 3) return res;
         int len = nums.length;
         Arrays.sort(nums);
         for (int i = 0; i < len; i++) {
@@ -29,7 +28,7 @@ public class _15_3Sum {
                     while (l < r && nums[r] == nums[r - 1]) r--;
                     l++;
                     r--;
-                } else if(sum <0) l++;
+                } else if (sum < 0) l++;
                 else r--;
             }
         }
