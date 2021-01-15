@@ -1,9 +1,6 @@
-package round01;
+package round03;
 
 import common.ListNode;
-
-import java.util.HashSet;
-import java.util.Set;
 
 public class _142_Linked_List_Cycle_II {
 
@@ -18,20 +15,9 @@ public class _142_Linked_List_Cycle_II {
         if (res != null) {
             System.out.println(res.val);
         }
-
-        node = ListNode.getCycleNode();
-        res = detectCycle1(node);
-        if (res != null) {
-            System.out.println(res.val);
-        }
-        node = ListNode.getSingleNode();
-        res = detectCycle1(node);
-        if (res != null) {
-            System.out.println(res.val);
-        }
     }
 
-    private static ListNode detectCycle1(ListNode head) {
+    private static ListNode detectCycle(ListNode head) {
         if (head == null) return null;
         ListNode slow = head, fast = head;
         while (fast != null && fast.next != null) {
@@ -45,18 +31,6 @@ public class _142_Linked_List_Cycle_II {
                 }
                 return fast;
             }
-        }
-        return null;
-    }
-
-    private static ListNode detectCycle(ListNode head) {
-        if (head == null) return null;
-        Set<ListNode> set = new HashSet<>();
-        while (head.next != null) {
-            if (!set.add(head)) {
-                return head;
-            }
-            head = head.next;
         }
         return null;
     }
